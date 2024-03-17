@@ -8,7 +8,7 @@
   text-align: center;
   color: var(--header-text);
   background: no-repeat var(--header-background);
-  backdrop-filter: brightness(0.5);
+  backdrop-filter: brightness(0);
   background-size: cover;
 
   /* Add the new settings here */
@@ -17,7 +17,7 @@
   background-image: url('assets/img/header/machin.jpg');
   background-size: 100% 100%; /* Set the width to 150% and the height to 100% */
   background-position: center;
-  min-height: 70vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
 
