@@ -11,6 +11,16 @@
   backdrop-filter: brightness(0.5);
   background-size: cover;
 
+  /* Add the new settings here */
+  margin: 0;
+  padding: 40px; /* Adjust padding as needed */
+  background-image: url('assets/img/header/machin.jpg');
+  background-size: 100% 100%; /* Set the width to 150% and the height to 100% */
+  background-position: center;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+
   h1 {
     font-family: $font-family-logo;
     @extend .subtle-txt-shadow;
