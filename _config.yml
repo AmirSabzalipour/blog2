@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
-baseurl: "/Type-on-Strap"
-url: "https://sylhare.github.io"
+baseurl: "/blog2" # No subdirectory
+url: "https://github.com/AmirSabzalipour/blog2"
 
 # THEME-SPECIFIC CONFIGURATION
 title: Type on Strap                                    # site's title
