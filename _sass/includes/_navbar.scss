@@ -154,7 +154,16 @@ nav {
 
     }
   }
-
+  .avatar {
+    /* Increase the width and height */
+    width: 120px; /* Adjust the width as needed */
+    height: 120px; /* Adjust the height as needed */
+  
+    /* Add additional styles */
+    border-radius: 50%; /* Make the image round */
+    border: 2px solid #fff; /* Add a border with white color */
+  }
+  
 }
 
 
