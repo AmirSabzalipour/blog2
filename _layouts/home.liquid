@@ -1,43 +1,29 @@
+
 ---
 layout: default
 ---
-
 <div class="home">
-    <!-- Header image -->
     <style scoped>
-        {% assign image = site.header_feature_image | relative_url %}
+        {% assign image = site.header_feature_image | relative_url | split: '.' %}
         .call-out_img {
-            background-image: url('{{ image }}');
-            position: relative; /* Ensure relative positioning */
+            background-image: url('{{ image | join: '.' }}');
         }
         {% if site.header_feature_image_responsive %}
         @media screen and (max-width: 768px) {
             .call-out_img {
-                background-image: url('{{ image | append: '-medium' }}.{{ image | split: '.' | last }}');
+                background-image: url('{{ image[0] | append: '-medium.' | append: image[1] | default: image}}');
             }
         }
         @media screen and (max-width: 576px) {
             .call-out_img {
-                background-image: url('{{ image | append: '-small' }}.{{ image | split: '.' | last }}');
+                background-image: url('{{ image[0] | append: '-small.' | append: image[1] }}');
             }
         }
         {% endif %}
-        /* Additional image styling */
-        .additional-image {
-            position: absolute;
-            top: 50px; /* Adjust the top position as needed */
-            left: 50px; /* Adjust the left position as needed */
-            z-index: 1; /* Ensure the additional image is on top */
-        }
     </style>
     <div id="main" class="call-out call-out_img">
-        <!-- Header text -->
-        <h1>{{ site.header_text | default: "" }}</h1>
-        <!-- Additional content -->
-        <img src="/assets/img/header/iconn.png" alt="Additional Image" class="additional-image">
+        <h1> {{ site.header_text | default: "Change <code>header_text</code> in <code>_config.yml</code>"}} </h1>
     </div>
-
-    <!-- Recent posts -->
     {% capture _blog %}{% include blog/blog.liquid %}{% endcapture %}
     {{ _blog | split: " " | join: " "}}
 </div>
