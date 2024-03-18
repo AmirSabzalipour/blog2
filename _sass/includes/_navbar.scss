@@ -1,10 +1,4 @@
-/* Import BariolBold font */
-@font-face {
-  font-family: 'BariolBold';
-  src: url('/assets/fonts/bariol-bold-cufonfonts/Bariol-Bold.woff2') format('woff2');
-}
-
-/* To clear things when we float the element inside nav and ul */
+// To clear things when we float the element inside nav and ul
 .clear {
   *zoom: 1;
 
@@ -44,17 +38,17 @@
     width: 3em;
     float: left;
     margin-top: -13px;
-    border-radius: 50%; /* Make it round */
+    border-radius: 0.2em;
     margin-right: 0.5em;
-    padding: 2px 2px;
+    padding: 10px 10px;
+
   }
 
   .site-title {
     float: left;
     font-weight: bold;
-    font-family: 'BariolBold', sans-serif; /* Use BariolBold font */
+    font-family: $font-family-logo;
     font-size: 1.3em;
-    color: black;
   }
 }
 
@@ -62,7 +56,6 @@ nav {
   list-style: none;
   margin: 0;
   padding: 0;
-  font-family: 'BariolBold', sans-serif; /* Use BariolBold font */
 
   ul {
     margin: 0;
@@ -83,8 +76,6 @@ nav {
   a {
     &:hover {
       color: var(--link);
-      font-size: 20px; /* Adjust font size as needed */
-      font-weight: bold;
     }
 
     &#pull {
@@ -160,6 +151,7 @@ nav {
         margin: 0;
         display: block;
       }
+
     }
   }
 }
