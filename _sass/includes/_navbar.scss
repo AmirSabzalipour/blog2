@@ -155,3 +155,10 @@ nav {
     }
   }
 }
+
+.additional-content {
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translate(-50%, -50%); /* Centers the content */
+}
