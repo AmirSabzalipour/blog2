@@ -1,8 +1,8 @@
 /* Import Movavi Grotesque Black typeface */
 @font-face {
-  font-family: 'Movavi Grotesque Black';
-  src: url('path/to/movavi-grotesque-black.woff2') format('woff2'),
-       url('path/to/movavi-grotesque-black.woff') format('woff');
+  font-family: 'BariolBold';
+  src: url('/assets/fonts/bariol-bold-cufonfonts/movavi-grotesque-black.woff2') format('woff2'),
+       
   /* Add more font formats if necessary */
 }
 
@@ -54,7 +54,7 @@
   .site-title {
     float: left;
     font-weight: bold;
-    font-family: 'Cambria', sans-serif; /* Use Movavi Grotesque Black typeface */
+    font-family: 'BariolBold', sans-serif; /* Use Movavi Grotesque Black typeface */
     font-size: 1.3em;
     color: black;
   }
