@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -8,96 +8,31 @@ layout: home
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
   <!-- Add any additional meta tags, stylesheets, or scripts here -->
-  <link rel="stylesheet" href="assets/custom.css"> <!-- Correct path to your custom CSS file -->
   <style>
     /* Reset default margin and padding */
     body {
       margin: 0;
-      padding: 0; /* Reset padding */
-      background-image: url('assets/img/header/machin.jpg');
-      background-size: 100% 100%; /* Set the width to 100% and the height to 100% */
-      background-position: center;
-      min-height: 50vh;
-      display: flex;
-      flex-direction: column;
-      position: relative; /* Add this to set a relative position for the body */
-    }
-
-    /* Define styles for the overlay image */
-    .overlay-image {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%; /* Set the width to cover the entire body */
-      height: 100%; /* Set the height to cover the entire body */
-      z-index: 1; /* Ensure overlay image appears above the background image */
-    }
-
-    /* Define styles for the avatar */
-    .avatar-container {
-      position: absolute;
-      top: 50px;
-      left: 50px;
-      width: 180px;
-      height: 150px;
-      border-radius: 50%;
-      z-index: 2; /* Ensure avatar appears above the overlay image */
-    }
-
-    .avatar {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
+      padding: 0;
+      background-image: url('assets/img/header/data10.jpg'); /* Replace 'assets/img/background.jpg' with the path to your background image */
+      background-size: cover; /* Ensure the background image covers the entire page */
+      background-position: center; /* Center the background image */
     }
 
     /* Define styles for the post content */
     .post-content {
-      margin: 10px;
-      color: gray;
-      position: absolute;
-      top: 350px;
-      left: 40px;
-      width: 500px;
-      padding: 10px;
-      z-index: 2; /* Ensure post content appears above the overlay image */
-    }
-
-    /* Define styles for the footer */
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 70px;
+      margin: 20px; /* Add margin to the post content */
+      color: white; /* Change text color to white */
     }
   </style>
 </head>
 <body>
-  <!-- Overlay Image Section -->
-  <div class="overlay-image">
-    <img src="path/to/overlay/image.png" alt="Overlay Image">
-  </div>
-
-  <!-- Avatar Section -->
-  <div class="avatar-container">
+  <!-- Post content -->
+  <div id="color-post" class="post-content">
     <h2></h2>
-    <!-- Add class="avatar" to your avatar image -->
-    <img src="assets/img/pexels/amir.jpg" alt="Avatar Image" class="avatar">
+    <img src="assets/img/header/amir4.jpg" alt="Image Description" width="500"> <!-- Add the image here -->
+    <p>
+      As a physicist, I develop mathematical models and utilize computer simulations to study material properties for nanoelectronic applications. In addition to computational work on materials, I have also used optical interferometric microscopy to characterize the surface topography of solar cells and optical flats. Finally, I am proud to highlight my solid foundation in data analytics, using data science, machine learning, and optimization techniques throughout my academic career.
+    </p>
   </div>
-
-  <!-- Post Content Section -->
-  <div class="post-content">
-    <div id="color-post" style="font-size: 15px; color: #2171b5; font-family: 'Avenir Next LT Pro';">
-      <p>
-        As a physicist, I develop mathematical models and utilize computer simulations to study material properties for nanoelectronic applications. In addition to computational work on materials, I have also used optical interferometric microscopy to characterize the surface topography of solar cells and optical flats. Finally, I am proud to highlight my solid foundation in data analytics, using data science, machine learning, and optimization techniques throughout my academic career.
-      </p>
-    </div>
-  </div>
-
-  <!-- Add any other content here -->
-
-  <!-- Footer Section -->
-  <footer>
-    <!-- Footer content goes here -->
-  </footer>
 </body>
 </html>
