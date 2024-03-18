@@ -1,8 +1,84 @@
 ---
 layout: home
 ---
-<div class="home">
-    <img src="{{ site.avatar }}" alt="Avatar Image" class="avatar" style="width: 180px; height: 150px; border-radius: 50%; position: relative; top: -100px; left: -120px;">
-    <!-- Other content -->
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <!-- Add any additional meta tags, stylesheets, or scripts here -->
+  <link rel="stylesheet" href="assets/custom.css"> <!-- Correct path to your custom CSS file -->
+  <style>
+    /* Reset default margin and padding */
+    body {
+      margin: 0;
+      padding: 0; /* Reset padding */
+      background-image: url('assets/img/header/machin.jpg');
+      background-size: 100% 100%; /* Set the width to 100% and the height to 100% */
+      background-position: center;
+      min-height: 50vh;
+      display: flex;
+      flex-direction: column;
+    }
 
+    /* Define styles for the avatar */
+    .avatar-container {
+      position: absolute;
+      top: -150px;
+      left: 10px;
+      width: 300px;
+      padding: 10px;
+    }
+
+    .avatar {
+      width: 180px;
+      height: 150px;
+      border-radius: 50%;
+    }
+
+    /* Define styles for the post content */
+    .post-content {
+      margin: 10px;
+      color: gray;
+      position: absolute;
+      top: 350px;
+      left: 40px;
+      width: 500px;
+      padding: 10px;
+    }
+
+    /* Define styles for the footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 70px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Avatar Section -->
+  <div class="avatar-container">
+    <h2></h2>
+    <!-- Add class="avatar" to your avatar image -->
+    <img src="assets/img/pexels/amir.jpg" alt="Avatar Image" class="avatar">
+  </div>
+
+  <!-- Post Content Section -->
+  <div style="position: absolute; top: -300px; left: 0px; width: 400px; padding: 10px 10px 500px;">
+    <div id="color-post" class="post-content" style="font-size: 15px; color: #2171b5; font-family: 'Avenir Next LT Pro';">
+      <p>
+        As a physicist, I develop mathematical models and utilize computer simulations to study material properties for nanoelectronic applications. In addition to computational work on materials, I have also used optical interferometric microscopy to characterize the surface topography of solar cells and optical flats. Finally, I am proud to highlight my solid foundation in data analytics, using data science, machine learning, and optimization techniques throughout my academic career.
+      </p>
+    </div>
+  </div>
+
+  <!-- Add any other content here -->
+
+  <!-- Footer Section -->
+  <footer>
+    <!-- Footer content goes here -->
+  </footer>
+</body>
+</html>
